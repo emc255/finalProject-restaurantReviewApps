@@ -49,7 +49,6 @@ self.addEventListener("activate", e => {
 
 self.addEventListener("fetch", e => {
   console.log("fetch");
-  console.log(e);
   e.respondWith(
     fetch(e.request)
       .then(res => {
