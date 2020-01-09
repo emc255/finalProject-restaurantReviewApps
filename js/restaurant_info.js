@@ -15,7 +15,7 @@ initMap = () => {
   fetchRestaurantFromURL((error, restaurant) => {
     if (error) {
       // Got an error!
-      console.log(error);
+      console.error(error);
     } else {
       self.newMap = L.map("map", {
         center: [restaurant.latlng.lat, restaurant.latlng.lng],
